@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+* {
+  padding: 0;
+  margin:0;
+}
+body{
+    background-color: #FFF4B0;
+}
+a {
+  text-decoration: none;
+}
+#logo{
+  margin-left: 30px;
+}
+.navbar-nav{
+  padding-left: 60%;
+}
+#link {
+  margin-right: 30px;
+  font-size:18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+#link:hover{
+  margin-right: 30px;
+  background-color: #616661;
+  color: #fff;
+  border-radius:20px;
+}
+
+.navbar-toggler span{
+  color: #fff;
+  background-image: url("https://img.icons8.com/material/24/000000/menu--v4.png");
+}
+
+#fundo{
+  background-image: url(https://fia.com.br/blog/wp-content/uploads/2019/02/energia-sustentavel-o-que.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fundo::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color:#9b7020;
+  opacity: .2;
+  z-index: 2;
+}
+
+.bg-dark{
+  background: transparent !important;
+}
+.bg-dark.scrolled{
+  background: #ff0000 !important; 
+}
+
+#title h2{
+  margin-top:100px;
+  font-size:40px;
+  color: #706d4c;
+  text-transform: uppercase;
+  font-weight:700;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.descrition
+{
+   margin-top: 50px;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+.descrition p
+{
+    font-size: 1.4em;
+    color: #706d4c;
+}
+
+@media only screen and (max-width: 768px) {
+  #title h2{
+    font-size:30px;
+  }
+}
+
+

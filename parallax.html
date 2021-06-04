@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste implementação Parallax</title>
+    <link rel="stylesheet" type="text/css" href="parallax.css">
+</head>
+<body>
+    <div class="transition transition-1 is-active"></div>
+    <header id="header">
+        <a href="#" class="logo">Energy</a>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#">Energia</a></li>
+            <li><a href="#">Quiz</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="Parallax images/hidro.jpg" id="forest">
+        <h2 id="text"><span>Energia</span><br>Hidrelétrica</h2>
+        <img src="Parallax images/bird1.png" id="bird1">
+        <img src="Parallax images/bird2.png" id="bird2">
+        
+        
+        <a href="#" id="btn">Explore</a>
+        <img src="Parallax images/water.png" id="water">
+        <img src="Parallax images/rocks2.png" id="rocks">
+        
+    </section>
+    <div class="sec">
+        <h2>Um pouco sobre Usinas Hidrelétricas</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quis distinctio! Nesciunt, soluta quisquam nam, impedit deserunt quaerat hic eum magnam accusamus sint voluptatem itaque ratione quos similique atque explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quia eius pariatur expedita facere. Explicabo sed recusandae facere vero culpa ratione molestias at. Fuga at iusto libero deleniti aliquid autem. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ex? Error qui, nulla ipsam libero necessitatibus illo ea quos asperiores, dolorem eum velit. Earum vero suscipit doloremque in quis commodi?<br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quis distinctio! Nesciunt, soluta quisquam nam, impedit deserunt quaerat hic eum magnam accusamus sint voluptatem itaque ratione quos similique atque explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quia eius pariatur expedita facere. Explicabo sed recusandae facere vero culpa ratione molestias at. Fuga at iusto libero deleniti aliquid autem. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ex? Error qui, nulla ipsam libero necessitatibus illo ea quos asperiores, dolorem eum velit. Earum vero suscipit doloremque in quis commodi?<br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quis distinctio! Nesciunt, soluta quisquam nam, impedit deserunt quaerat hic eum magnam accusamus sint voluptatem itaque ratione quos similique atque explicabo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad quia eius pariatur expedita facere. Explicabo sed recusandae facere vero culpa ratione molestias at. Fuga at iusto libero deleniti aliquid autem. lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, ex? Error qui, nulla ipsam libero necessitatibus illo ea quos asperiores, dolorem eum velit. Earum vero suscipit doloremque in quis commodi?</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function()
+        {
+            let value = window.scrollY;
+
+            text.style.top = 35 + value * -0.125 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 +'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value *1.5 + 'px';
+            //rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px';
+            
+        })
+    </script>
+</body>
+</html>

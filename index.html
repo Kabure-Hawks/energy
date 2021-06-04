@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/style.CSS">
+    <link rel="stylesheet" href="./css/menu-suspenso.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/scrool.css">
+    <link rel="stylesheet" href="./css/flip.css">
+    <link rel="icon" type="image/png" href="./public/img/Save energy.png">
+    <link rel="stylesheet" href="./css/transition.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <title>Save Energy</title>
+</head>
+<body>
+  <!--Efeito transição-->
+  <script src="./script/main_transition.js"></script>
+  <div class="transition transition-1 is-active"></div> <!--Todas as páginas devem ter uma div dessa-->
+
+
+  <!----Menu e Banner----->
+  <header id="nav-bar">
+    <nav class="navbar navbar-expand-md navbar-default bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="./public/img/Save_energy_Full_Personalizado.png" alt="logo"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <div class="dropdown">
+              <a id="link" class="nav-link active" aria-current="page">Energia</a>
+              <div class="dropdown-content">
+                <a href="#">Solar</a>
+                <a href="#">Bioenergia</a>
+                <a href="./eolica.html">Eolica</a>
+                <a href="./hidro.html">Hidroeletrica</a>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a id="link" class="nav-link active" aria-current="page" href="#">Quiz</a>
+            </li>
+            <li class="nav-item">
+              <a id="link" class="nav-link active" aria-current="page" href="#">Contato</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="fundo">
+    <div class="teste">
+      <div class="switch_tipo">
+        <span class="seta_conta_guide ">
+        <a href="#">
+        Cadastre-se <br/>
+        Na nossa Newsleter
+        </a>
+        <div class="switch_tooltip">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M11.2889 14.2534C11.2889 13.8825 11.3349 13.5494 11.4328 13.254C11.5306 12.9585 11.6572 12.682 11.824 12.4243C11.9851 12.1666 12.1692 11.9277 12.3706 11.7014C12.572 11.4752 12.7792 11.2552 12.992 11.0289C13.1474 10.8592 13.297 10.6958 13.4351 10.5449C13.5732 10.394 13.6998 10.2306 13.8033 10.0483C13.9127 9.87235 13.999 9.6775 14.0565 9.46379C14.1198 9.25008 14.1486 9.00495 14.1486 8.72838C14.1486 8.22554 14.0105 7.83584 13.74 7.55299C13.4696 7.27014 13.1014 7.12557 12.6468 7.12557C12.0312 7.12557 11.5593 7.27643 11.2256 7.57813C10.8919 7.87984 10.656 8.42039 10.5121 9.18094L8.17609 8.86666C8.2739 8.30097 8.4235 7.7667 8.63064 7.27643C8.83778 6.78616 9.11972 6.35245 9.4707 5.98789C9.82744 5.62333 10.2705 5.34048 10.7941 5.12678C11.3177 4.91307 11.9448 4.8125 12.6698 4.8125C13.9644 4.8125 14.9771 5.13935 15.7079 5.78047C16.4386 6.42788 16.8011 7.30157 16.8011 8.41411C16.8011 8.83524 16.7608 9.20608 16.6803 9.52036C16.5997 9.83464 16.4961 10.1175 16.3638 10.3626C16.2315 10.6078 16.0819 10.8277 15.9092 11.0226C15.7424 11.2237 15.564 11.4186 15.3856 11.6197C15.167 11.8586 14.9599 12.0849 14.77 12.2923C14.5744 12.506 14.4075 12.7197 14.2636 12.9334C14.1198 13.1534 14.0047 13.3734 13.9184 13.606C13.8321 13.8385 13.7918 14.0899 13.7918 14.3665V14.7059H11.2889V14.2534Z" fill="white"></path>
+        <path d="M13.7746 16.0385H11.2717V19.1875H13.7746V16.0385Z" fill="white"></path>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4886 22.0625C18.0459 22.0625 22.5511 17.5574 22.5511 12C22.5511 6.44264 18.0459 1.9375 12.4886 1.9375C6.93122 1.9375 2.42609 6.44264 2.42609 12C2.42609 17.5574 6.93122 22.0625 12.4886 22.0625ZM23.9886 12C23.9886 18.3513 18.8399 23.5 12.4886 23.5C6.13731 23.5 0.988586 18.3513 0.988586 12C0.988586 5.64873 6.13731 0.5 12.4886 0.5C18.8399 0.5 23.9886 5.64873 23.9886 12Z" fill="white"></path>
+        </svg>
+        <div class="hidden_tooltip">
+        <p>Se cadastrando na nossa Newsleter você recebera noticias sobre o que esta acontecendo de mais importante no meio ambiente</p>
+        </div>
+        </div>
+        </span>
+        </div>
+
+      <form action="processar.php" method="post">
+        <label for="nome">Nome Completo</label> <br/>
+        <input type="text" name="nome" placeholder=""/> <br/>
+        <label for="telefone">Celular: </label><br/>
+        <input type="text" name="telefone" placeholder=""/> <br/>
+        <label for="email">E-mail: </label><br/>
+        <input type="email" name="email" placeholder=""/> <br/>
+        <label for="email">Senha: </label><br/>
+        <input type="password" name="password" placeholder=""/> <br/>
+        <button class="btn">Cadastrar</button>
+    </form>
+
+    </div>
+</section>
+  <!----Fim Menu e Banner----->
+
+    <!----Titulo 1----->
+    <div id="title">
+      <h2><u>Energias Sustentaveis</u></h2>
+    </div>
+
+  <!----Cards flip----->
+
+<section class="flip">
+  <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2 class="titulo__frente">Solar</h2>
+                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+						<h2>Energia Solar</h2>
+					</div>
+					<div class="card__body">
+						<h3>Energia dos ventos</h3>
+						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2 class="titulo__frente">Bioenergia</h2>
+                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+						<h2>Bioenergia</h2>
+					</div>
+					<div class="card__body">
+						<h3>Energia dos ventos</h3>
+						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2 class="titulo__frente">Eolica</h2>
+                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+						<h2>Energia Eolica</h2>
+					</div>
+					<div class="card__body">
+						<h3>Energia dos ventos</h3>
+						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+  <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+				<h2 class="titulo__frente " style="top: 60px; text-align: center;">Hidro Energia</h2>
+                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+					<div class="card__header">
+						<h2>Hidro Energia</h2>
+					</div>
+					<div class="card__body">
+						<h3>Energia dos ventos</h3>
+						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+  <!----Fim Cards flip----->
+
+  <!---Footer-->
+  <section class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>Contatos</h4>
+          <ul>
+            <li><a href="#"></a>Tell:  (11) 96365-8644</li>
+            <li><a href="#"></a>allan.saito713@gmail.com</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Redes sociais</h4>
+          <ul>
+            <li><a href="#"></a><i class="fab fa-facebook-square">facebook.com</i></li>
+            <li><a href="#"></a><i class="fab fa-instagram" _mstvisible="2">instagram.com</i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!---Fim Footer-->
+
+
+</body>
+<!----JavaScript---->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script src="./script/nav-tranparent.js"></script>
+<script src="./script/flip.js"></script>
+
+</html>
