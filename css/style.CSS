@@ -68,7 +68,7 @@ a {
 }
 
 #title h2{
-  margin-top:100px;
+  margin-top:50px;
   font-size:40px;
   color: #706d4c;
   text-transform: uppercase;
@@ -77,6 +77,17 @@ a {
   text-align: center;
 }
 
+#title_text { 
+  color: #706d4c;
+  text-transform: uppercase;
+  font-weight:700;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+#imagens_text{
+  position: relative;
+  float: right;
+}
 .descrition
 {
    margin-top: 50px;
@@ -85,9 +96,40 @@ a {
 }
 .descrition p
 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #706d4c;
+    text-align: justify; 
+    position: relative; 
+    right: 15px;
 }
+.descrition ul
+{
+    font-size: 1.3em;
+    color: #706d4c;
+    text-align: justify; 
+    position: relative; 
+    right:5px;
+}
+
+.descrition table
+{
+    font-size: 1.3em;
+    color: #706d4c;
+    text-align: justify; 
+    position: relative; 
+    right:5px;
+}
+
+#imagens_textG{
+  width:935px;
+  height:555px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
 
 @media only screen and (max-width: 768px) {
   #title h2{
