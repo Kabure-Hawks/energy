@@ -1,26 +1,57 @@
-.footer{
-    margin-top: 50px;
-    background-color:#242424 ;
-    height: auto;
-    width: 100%;
-    padding-top: 40px;
-    color: #fff;
-  }
-  .footer-col{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 50%;
-  }
-  .footer-col a{
-      text-decoration: none;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-  .fa-facebook-square{
-      margin-left: 15px;
-  }
-
-  .fa-instagram{
-    margin-left: 15px;
-  }
+#footer{
+  background-color: #242424;
+}
+#footer .brand h1{
+  font-size:25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+#footer .footer{
+  min-height: 200px;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+#footer h2{
+  font-size:20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: .1rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#footer .social-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#footer .social-item{
+  
+ 
+}
+#footer .social-item img{
+  filter: grayscale(1);
+  transition: .3s ease filter;
+}
+#footer .social-item:hover img{
+  filter: grayscale(0);
+}
+#footer p{
+  margin-top: 10px;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}

@@ -68,7 +68,7 @@ a {
 }
 
 #title h2{
-  margin-top:100px;
+  margin-top:50px;
   font-size:40px;
   color: #706d4c;
   text-transform: uppercase;
@@ -87,6 +87,12 @@ a {
 {
     font-size: 1.4em;
     color: #706d4c;
+}
+
+hr{
+  width: 100%;
+  color: #fff;
+  height:5px;
 }
 
 @media only screen and (max-width: 768px) {
