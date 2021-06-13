@@ -68,7 +68,7 @@ a {
 }
 
 #title h2{
-  margin-top:50px;
+  margin-top:40px;
   font-size:40px;
   color: #706d4c;
   text-transform: uppercase;
@@ -85,15 +85,108 @@ a {
 }
 .descrition p
 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #706d4c;
+    text-align: justify; 
+    position: relative; 
+    right: 15px;
 }
+.descrition ul
+{
+    font-size: 1.3em;
+    color: #706d4c;
+    text-align: justify; 
+    position: relative; 
+    right:5px;
+}
+
+.descrition table
+{
+    font-size: 1.3em;
+    color: #706d4c;
+    text-align: justify; 
+    position: relative; 
+    right:5px;
+}
+
+#imagens_text{
+  position: relative;
+  float: right;
+}
+
+#video{
+  position: relative;
+  float: right;
+  z-index: 5;
+}
+
+#imagens_textG{
+  width:935px;
+  height:555px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 15px;
+}
+
+#tableHome{
+  border: 1px solid black;
+  padding: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.img-site{
+  height: 10%;
+  width: 100%;
+  margin-top: 30px;
+  background-image: url(https://blog.kisoltec.com.br/wp-content/uploads/2019/06/296288-linked-content-post-satelite-energia-renovavel-no-brasil-veja-a-situacao-atual-e-projecoes-futuras.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment: fixed;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+}
+
+#frase{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+#qBtn{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  background: linear-gradient(90deg, rgb(79, 255, 9) 0%, rgb(170, 240, 6) 100%);
+  padding: 10px 30px 10px 30px;
+  font-size:18px;
+  color: #000;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(81, 255, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+}
+#qBtn:hover{
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgb(72, 85, 67) 0%, rgb(51, 53, 45) 100%);
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(46, 48, 46, 0.5);
+}
+
 
 hr{
   width: 100%;
   color: #fff;
   height:5px;
 }
+
+
 
 @media only screen and (max-width: 768px) {
   #title h2{

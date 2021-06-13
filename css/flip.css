@@ -119,6 +119,27 @@
     line-height: 1.4;
   }
 
+  .card__body a{
+  text-decoration: none;
+  display: inline-block;
+  border: 1px solid black;
+  background: linear-gradient(90deg, rgb(79, 255, 9) 0%, rgb(170, 240, 6) 100%);
+  padding: 10px 10px 10px 10px;
+  font-size:18px;
+  color: #000;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(81, 255, 0, 0.5);
+  z-index: 1000;
+  position: relative;
+  }
+
+  .card__body a:hover{
+      color: rgb(34, 37, 197);
+    }
+
+
+
   .Imagem__frente {
     position: absolute;
     bottom: 40px;

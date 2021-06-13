@@ -26,7 +26,7 @@
   <header id="nav-bar">
     <nav class="navbar navbar-expand-md navbar-default bg-dark fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="./index.html">
           <img id="logo" src="./public/img/Save_energy_Full_Personalizado.png" alt="logo"/>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a id="link" class="nav-link active" aria-current="page" href="#">Home</a>
+              <a id="link" class="nav-link active" aria-current="page" href="./index.html">Home</a>
             </li>
             <div class="dropdown">
               <a id="link" class="nav-link active" aria-current="page">Energia</a>
@@ -50,7 +50,7 @@
               <a id="link" class="nav-link active" aria-current="page" href="./quiz/quiz.html">Quiz</a>
             </li>
             <li class="nav-item">
-              <a id="link" class="nav-link active" aria-current="page" href="#">Contato</a>
+              <a id="link" class="nav-link active" aria-current="page" href="./referencias.html">Referencias</a>
             </li>
             
           </ul>
@@ -80,7 +80,7 @@
         </span>
         </div>
 
-      <form action="processar.php" method="post">
+      <form>
         <label for="nome">Nome Completo</label> <br/>
         <input type="text" name="nome" placeholder=""/> <br/>
         <label for="telefone">Celular: </label><br/>
@@ -89,102 +89,193 @@
         <input type="email" name="email" placeholder=""/> <br/>
         <label for="email">Senha: </label><br/>
         <input type="password" name="password" placeholder=""/> <br/>
-        <button class="btn">Cadastrar</button>
+        <button class="btn" onclick="alert('Cadastro Realizado com sucesso')">Cadastrar</button>
     </form>
 
     </div>
 </section>
   <!----Fim Menu e Banner----->
 
+  <!----Resumo-->
+
+  <section class="resumo">
+    <div  class="descrition">
+
+      <div id="title" style="margin-bottom: 30px;">
+        <h2><u>O que é energia sustentável</u></h2>
+      </div>  
+      <div id="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/t_4zeA_P_dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p>
+        Energia sustentável é toda energia elétrica originada a partir de fontes renováveis que não geram impactos ao meio ambiente, como a energia solar fotovoltaica e a eólica.
+      </p>
+
+      <p>
+        Quando pensamos em energia e sustentabilidade, devemos considerar a importância da união desses dois fatores nos dias atuais. Desta forma, a utilização de fontes de energia renováveis é fundamental para que as gerações futuras não sejam afetadas, uma vez que os recursos não se esgotam e estão disponíveis gratuitamente.
+      </p>
+
+      <p>
+        A sustentabilidade possui um papel muito importante não só como fator principal na geração de energia limpa como também em questões sociais, econômicas e ambientais. Sendo assim, além de contribuírem para a diminuição dos impactos ao meio ambiente, as fontes renováveis auxiliam na economia das contas de luz em até 95%, o que permite que localidades de baixa renda tenham acesso à energia elétrica.
+      </p>
+
+      <p>
+        A melhor forma de se utilizar energias sustentáveis é combinando umas com as outras, diversificando a matriz energética. Se investirmos mais em energia solar e eólica podemos aproveitar períodos de secas, que interferem na geração de energia hídrica, para gerar a nossa energia com o sol ou o vento e economizar água. Desta forma seria possível equilibrar a balança energética brasileira minimizando ou extinguindo problemas de secas nos reservatórios ou grandes apagões.
+      </p>
+ 
+    </div>
+  </section>
+
+
     <!----Titulo 1----->
     <div id="title">
       <h2><u>Energias Sustentaveis</u></h2>
     </div>
-
   <!----Cards flip----->
 
-<section class="flip">
-  <div class="card">
-		<div class="card__inner">
-			<div class="card__face card__face--front">
-				<h2 class="titulo__frente">Solar</h2>
-                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
-			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-					<div class="card__header">
-						<h2>Energia Solar</h2>
-					</div>
-					<div class="card__body">
-						<h3>Energia dos ventos</h3>
-						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <section class="flip">
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 class="titulo__frente">Solar</h2>
+                  <img class="Imagem__frente" src="./imagens/Solar.png" alt="">
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <h2>Energia Solar</h2>
+            </div>
+            <div class="card__body">
+              <h3 style="text-align: center;">A Energia da Luz</h3>
+              <p style="font-size: 12pt; text-align: justify; margin-bottom:40px;">A <strong>energia solar</strong> é uma <strong>energia alternativa, renovável e sustentável</strong> que funciona utilizando a luz solar como fonte de energia.</p>
+              <a href="./solar.html">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 class="titulo__frente">Bioenergia</h2>
+                  <img class="Imagem__frente" src="./imagens/Bio.png" alt="">
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <h2>Bioenergia</h2>
+            </div>
+            <div class="card__body">
+              <h3 style="text-align: center;">Energia dos ventos</h3>
+              <p style="font-size: 12pt; text-align: justify; margin-bottom:40px;">“Bioenergia” é o termo utilizado para se referir à energia proveniente da biomassa, isto é, da matéria orgânica de origem vegetal e animal.</p>
+              <a href="./bioenergia.html">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 class="titulo__frente">Eolica</h2>
+                  <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <h2>Energia Eolica</h2>
+            </div>
+            <div class="card__body">
+              <h3 style="text-align: center;">Energia dos ventos</h3>
+              <p style="font-size: 12pt; text-align: justify; margin-bottom:40px;"> O termo energia eólica descreve o processo pelo qual o vento é usado para gerar energia mecânica ou elétrica</p>
+              <a href="./eolica.html">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <h2 class="titulo__frente " style="top: 60px; text-align: center;">Hidrelétrica</h2>
+                  <img class="Imagem__frente" src="./imagens/hidro.png" alt="">
+        </div>
+        <div class="card__face card__face--back">
+          <div class="card__content">
+            <div class="card__header">
+              <h2>Energia das Água</h2>
+            </div>
+            <div class="card__body">
+              <h3 style="text-align: center;">Energia das águas</h3>
+              <p style="font-size: 12pt; text-align: justify; margin-bottom:20px;">A energia hidrelétrica representa hoje em torno de 90% da produção mundial de fontes renováveis e contribui com 17% da capacidade instalada total do mundo</p>
+              <a href="./hidro.html">Saiba mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!----Fim Cards flip----->
+    <div class="img-site">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 id="frase">
+              Testes seus conhecimentos sobre energias renováveis<br/>
+              Faça nosso Quiz
+            </h1>
+            <a href="./quiz/quiz.html" id="qBtn">Quiz</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---Resumo 2-->
 
-  <div class="card">
-		<div class="card__inner">
-			<div class="card__face card__face--front">
-				<h2 class="titulo__frente">Bioenergia</h2>
-                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
-			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-					<div class="card__header">
-						<h2>Bioenergia</h2>
-					</div>
-					<div class="card__body">
-						<h3>Energia dos ventos</h3>
-						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <section class="resumo">
+      <div  class="descrition">
+  
+        <div id="title" style="margin-bottom: 30px;">
+          <h2><u>A energia sustentável no Brasil</u></h2>
+        </div>  
+        
+        <p>
+          Não é preciso pensar muito sobre a utilização da energia sustentável no Brasil para conhecer seus diversos benefícios, como a preservação do meio ambiente, economia nas tarifas de luz e facilidade de recursos naturais no país, por exemplo. Por isso, seu aproveitamento vem sendo cada vez mais favorável, tanto para uso individual quanto conjunto em estabelecimentos comerciais e indústrias.
+        </p>
 
-  <div class="card">
-		<div class="card__inner">
-			<div class="card__face card__face--front">
-				<h2 class="titulo__frente">Eolica</h2>
-                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
-			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-					<div class="card__header">
-						<h2>Energia Eolica</h2>
-					</div>
-					<div class="card__body">
-						<h3>Energia dos ventos</h3>
-						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+        <p>
+          O Brasil, portanto, fica atrás apenas de grandes países como China e EUA no ranking de produção de energia renovável, com fontes alternativas como energia hidráulica, eólica, solar e biomassa. Desta forma, é válido destacar que o mercado de energia solar está desenvolvendo-se cada vez mais, necessitando somente de incentivos governamentais para a diminuição dos custos de aquisição e instalação, a fim de aumentar o número de usuários no país.
+        </p>
 
-  <div class="card">
-		<div class="card__inner">
-			<div class="card__face card__face--front">
-				<h2 class="titulo__frente " style="top: 60px; text-align: center;">Hidro Energia</h2>
-                <img class="Imagem__frente" src="https://images.vexels.com/media/users/3/218293/isolated/preview/33d3f37759960625bcac5b7cc7ef660a-silhueta-de-turbina-de-energia-e-oacute-lica-by-vexels.png" alt="">
-			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-					<div class="card__header">
-						<h2>Hidro Energia</h2>
-					</div>
-					<div class="card__body">
-						<h3>Energia dos ventos</h3>
-						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-  <!----Fim Cards flip----->
+        <p>
+          De acordo com dados de 2019, o aproveitamento de fontes de energia renováveis é predominante nas seguintes fontes de energia limpa:
+        </p>
+
+        <table id="tableHome">
+          <tr>
+            <th>Energia Hidráulica</th>
+            <th>Energia Eólica</th>
+            <th>Energia Biomassa</th>
+            <th>Energia Solar</th>
+          </tr>
+          <tr>
+            <td>61%</td>
+            <td>9%</td>
+            <td>8%</td>
+            <td>1%</td>
+          </tr>
+        </table> 
+
+        <p>
+          Embora a energia solar esteja em última colocação da matriz energética brasileira, acredita-se que em apenas alguns anos ela se tornará a principal fonte de energia renovável em utilização no Brasil. Por ser limpa e inesgotável, temos a certeza que haverá luz do sol para a captação de energia durante muitas gerações, tornando a produção de eletricidade simples, eficiente e sustentável.
+        </p>
+       
+   
+      </div>
+    </section>
+  
 
   <!---Footer-->
   <section id="footer">
