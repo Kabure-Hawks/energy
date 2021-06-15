@@ -112,6 +112,8 @@ a {
 #imagens_text{
   position: relative;
   float: right;
+  height: 500px; 
+  width: 700px;
 }
 
 #video{
@@ -130,11 +132,17 @@ table, th, td {
   padding: 15px;
 }
 
-#tableHome{
-  border: 1px solid black;
-  padding: 15px;
+.content-table{
+  display:flex;
+  margin: auto;
+}
+
+.tableHome{
+  
   width: 100%;
   margin-bottom: 20px;
+  text-align: center;
+  
 }
 
 .img-site{
@@ -192,6 +200,43 @@ hr{
   #title h2{
     font-size:30px;
   }
+  #video{
+    float:none;
+    justify-content: center;
+    display:flex;
+  }
+  .content-table{
+    width: 94%;
+  }
+
+  .tableHome th{
+    display:flex;
+    flex-direction:column;
+  }
+  .tableHome td{
+    display:flex;
+    flex-direction:column;
+  }
+
+  #imagens_text{
+    position: relative;
+    float: none;
+    width:300px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #imagens_textG{
+    float:none;
+    width:300px;
+    height:300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 
